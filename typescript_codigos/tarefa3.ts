@@ -1,3 +1,7 @@
+// Tarefa de ultilização de funções
+
+
+
 //-----SOMA-----
 
 let num1: number = Number(prompt('digite um numero: '));
