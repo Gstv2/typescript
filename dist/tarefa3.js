@@ -1,4 +1,5 @@
 "use strict";
+// Tarefa de ultilização de funções
 //-----SOMA-----
 let num1 = Number(prompt('digite um numero: '));
 let num2 = Number(prompt('digite outro numero: '));
@@ -10,8 +11,8 @@ alert('soma dos numeros digitados é: ' + resultado1);
 //-----MULTIPLICAÇÃO-----
 let num3 = Number(prompt('digite um numero: '));
 let num4 = Number(prompt('digite outro numero: '));
-let resultado2 = multiplicacao(num3, num4);
-function multiplicacao(num3, num4) {
+let resultado2 = multiplicacao1(num3, num4);
+function multiplicacao1(num3, num4) {
     return num3 * num4;
 }
 alert('multiplicação dos numeros digitados é: ' + resultado2);

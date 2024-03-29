@@ -23,8 +23,8 @@ alert('soma dos numeros digitados é: '+resultado1);
 let num3: number = Number(prompt('digite um numero: '));
 let num4: number = Number(prompt('digite outro numero: '));
 
-let resultado2: number = multiplicacao(num3,num4);
-function multiplicacao(num3:number, num4:number) {
+let resultado2: number = multiplicacao1(num3,num4);
+function multiplicacao1(num3:number, num4:number) {
     return num3 * num4;
 }
 alert('multiplicação dos numeros digitados é: '+resultado2);
