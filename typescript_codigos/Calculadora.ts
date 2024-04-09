@@ -1,25 +1,22 @@
-let numero1:number = verificarValor('digite um numero');
-let numero2:number = verificarValor('digite um numero');
-
 let resulta:number |null;
 let sistema:boolean = false;
 while(!sistema){
     let opcao:string = verificarOpção('Escolha a operação que deseja: \n1- soma\n2- subtração\n3- multiplicação\n4- divisão\n0- Sair');
     switch(opcao){
         case "1":
-            resulta = somar(numero1,numero2);
+            resulta = somar();
             alert('Seu resultado é: '+resulta);
             break;
         case "2":
-            resulta = subitração(numero1,numero2);
+            resulta = subitração();
             alert('Seu resultado é: '+resulta);
             break;
         case "3":
-            resulta = multiplicacao(numero1,numero2);
+            resulta = multiplicacao();
             alert('Seu resultado é: '+resulta);
             break;
         case "4":
-            resulta = divisão(numero1,numero2);
+            resulta = divisão();
             alert('Seu resultado é: '+resulta);
             break;
         case "0":
@@ -50,16 +47,24 @@ function verificarValor(pergunta:string):number{
 }
 
 
-function somar(numero1:number,numero2:number){
+function somar(){
+    let numero1:number = verificarValor('digite um numero');
+    let numero2:number = verificarValor('digite um numero');
     return numero1 + numero2;
 }
-function subitração(numero1:number,numero2:number){
+function subitração(){
+    let numero1:number = verificarValor('digite um numero');
+    let numero2:number = verificarValor('digite um numero');
     return numero1 - numero2;
 }
-function multiplicacao(numero1:number,numero2:number){
+function multiplicacao(){
+    let numero1:number = verificarValor('digite um numero');
+    let numero2:number = verificarValor('digite um numero');
     return numero1 * numero2;
 }
-function divisão(numero1:number,numero2:number){
+function divisão(){
+    let numero1:number = verificarValor('digite um numero');
+    let numero2:number = verificarValor('digite um numero');
     return numero1 / numero2;
 }
 

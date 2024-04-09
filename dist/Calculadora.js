@@ -1,25 +1,23 @@
 "use strict";
-let numero1 = verificarValor('digite um numero');
-let numero2 = verificarValor('digite um numero');
 let resulta;
 let sistema = false;
 while (!sistema) {
     let opcao = verificarOpção('Escolha a operação que deseja: \n1- soma\n2- subtração\n3- multiplicação\n4- divisão\n0- Sair');
     switch (opcao) {
         case "1":
-            resulta = somar(numero1, numero2);
+            resulta = somar();
             alert('Seu resultado é: ' + resulta);
             break;
         case "2":
-            resulta = subitração(numero1, numero2);
+            resulta = subitração();
             alert('Seu resultado é: ' + resulta);
             break;
         case "3":
-            resulta = multiplicacao(numero1, numero2);
+            resulta = multiplicacao();
             alert('Seu resultado é: ' + resulta);
             break;
         case "4":
-            resulta = divisão(numero1, numero2);
+            resulta = divisão();
             alert('Seu resultado é: ' + resulta);
             break;
         case "0":
@@ -44,15 +42,23 @@ function verificarValor(pergunta) {
     }
     return resposta;
 }
-function somar(numero1, numero2) {
+function somar() {
+    let numero1 = verificarValor('digite um numero');
+    let numero2 = verificarValor('digite um numero');
     return numero1 + numero2;
 }
-function subitração(numero1, numero2) {
+function subitração() {
+    let numero1 = verificarValor('digite um numero');
+    let numero2 = verificarValor('digite um numero');
     return numero1 - numero2;
 }
-function multiplicacao(numero1, numero2) {
+function multiplicacao() {
+    let numero1 = verificarValor('digite um numero');
+    let numero2 = verificarValor('digite um numero');
     return numero1 * numero2;
 }
-function divisão(numero1, numero2) {
+function divisão() {
+    let numero1 = verificarValor('digite um numero');
+    let numero2 = verificarValor('digite um numero');
     return numero1 / numero2;
 }
